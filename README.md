@@ -1,5 +1,5 @@
 # Software-Engineering-Project
-Group 3: Frank Wilson
+Group 3: Frank Wilson, Jesse Parron
 
 
 Tedi {
