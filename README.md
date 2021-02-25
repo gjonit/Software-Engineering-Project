@@ -1,9 +1,4 @@
 # Software-Engineering-Project
-Group 3: Frank Wilson, Jesse Parron, Juan Salcedo, Pance Jordanov
+Group 3: Frank Wilson, Jesse Parron, Juan Salcedo, Pance Jordanov, Tedi Gjoni
 
-
-Tedi {
-1. We are starting with the frontend.
-2. Download GIT.
-3. Learn the basic commands of git.
-}
+//USE THE MASTER BRANCH FOR NOW.
