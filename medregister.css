@@ -3,9 +3,33 @@ h1 {
     text-align: center;
     font-weight: 500;
     color: rgb(72, 72, 126);
+    margin-top: 100px;
 }
 
-form {
+.header {
+    display: inline-block;
+    margin-left: 200px;
     text-align: center;
+}
+
+/* Align customer search box */
+.search {
+    text-align: center;
+}
+
+/* Align registration labels and inputs */
+.reg {
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin: 7px;
+}
+
+button{
+    margin: 20px;
 }
 

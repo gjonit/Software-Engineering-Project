@@ -3,3 +3,24 @@ h1 {
     font-weight: 500;
     color: rgb(72, 72, 126);
 }
+
+.header {
+    display: inline-block;
+    margin-left: 200px;
+    text-align: center;
+}
+
+/*  Style anchors in header class, hover effect */
+.header a:hover {
+    background-color: rgb(163, 163, 165);
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    margin: 3px;
+}
+
+button{
+    margin: 20px;
+}
