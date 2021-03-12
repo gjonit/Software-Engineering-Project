@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="medshop.css">
 </head>
+
 <body>
 
     <nav>
@@ -14,20 +16,24 @@
         <li><a href="About">About</a></li>
     </nav>
 
-    <h1>Customer Log in</h1>
+    <h1>Customer Login</h1>
 
-    <form action="/customer.html">
+    <form action="customer.html">
         <div>
-            <input type="text" placeholder="Username">
+            <label for="username">Username: </label>
+            <input id="username" type="text" placeholder="Username" name="username" required>
         </div>
         <div>
-            <input type="password" placeholder="Password">
+            <label for="password">Password: </label>
+            <input id="password" type="password" placeholder="Password" name="password" minlength="4" maxlength="20"
+                required>
         </div>
         <div>
             <button>Submit</button>
         </div>
     </form>
 
-    
+
 </body>
+
 </html>
