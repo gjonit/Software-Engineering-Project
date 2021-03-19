@@ -1,0 +1,357 @@
+.card {
+  position: relative;
+  right: 30%;
+  top: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  background-color: white;
+}
+
+.price {
+  color: black;
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+  background-color: white;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card2 {
+  position: relative;
+  right: 30%;
+  top: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card2 h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  background-color: white;
+}
+
+
+.card2 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card2 button:hover {
+  opacity: 0.7;
+}
+
+.card3 {
+  position: relative;
+  right: 30%;
+  top: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card3 h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  background-color: white;
+}
+
+
+.card3 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card3 button:hover {
+  opacity: 0.7;
+}
+
+.card4 {
+  position: relative;
+  right: 0%;
+  top: -693px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card4 h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  background-color: white;
+}
+
+
+.card4 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card4 button:hover {
+  opacity: 0.7;
+}
+
+
+.card5 {
+  position: relative;
+  right: 0%;
+  top: -592px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card5 h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  background-color: white;
+}
+
+
+.card5 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card5 button:hover {
+  opacity: 0.7;
+}
+
+
+.card6 {
+  position: relative;
+  right: 0%;
+  top: -492px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card6 h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  background-color: white;
+}
+
+
+.card6 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card6 button:hover {
+  opacity: 0.7;
+}
+
+.card7 {
+  position: relative;
+  right: -30%;
+  top: -1535px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card7 h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  background-color: white;
+}
+
+
+.card7 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card7 button:hover {
+  opacity: 0.7;
+}
+
+.card8 {
+  position: relative;
+  right: -30%;
+  top: -1432px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card8 h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  background-color: white;
+}
+
+
+.card8 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card8 button:hover {
+  opacity: 0.7;
+}
+
+.card9 {
+  position: relative;
+  right: -30%;
+  top: -1330px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card9 h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  background-color: white;
+}
+
+
+.card9 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card9 button:hover {
+  opacity: 0.7;
+}
+
+.card10 {
+  position: relative;
+  right: 30%;
+  top: -1225px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card10 h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  background-color: white;
+}
+
+
+.card10 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card10 button:hover {
+  opacity: 0.7;
+}
