@@ -68,5 +68,6 @@ button {
 body {
     background-image: url(medicalBack2.jpg);
     background-size: cover;
+    height: 100vh;
 }
 
