@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product Page</title>
+    <link rel="stylesheet" type="text/css" href="product_page.css">
+    <link rel="stylesheet" type="text/css" href="productCard.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="menu_content">
+                <a href="#">Account</a>
+                <a href="#">Cart</a>
+                <a href="#">Log Out</a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="title">
+            <h1>Medical Co Product Page</h1>
+        </div>
+
+
+
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="menu_content">
+                <a href="#">Account</a>
+                <a href="#">Cart</a>
+                <a href="#">Log Out</a>
+            </div>
+        </div>
+
+        <section>
+
+            <div class="slideshow">
+                <div class="Slide fade">
+                    <img src="image1.jpg" height="300" width="1000">
+                </div>
+
+                <div class="Slide fade">
+                    <img src="image2.jpg" height="300" width="1000">
+                </div>
+                <div class="Slide fade">
+                    <img src="image3.jpg" height="300" width="1000">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("Slide");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+
+
+            </script>
+        </section>
+
+
+
+
+        <div class="label">
+            <h2>All Products</h2>
+        </div>
+
+
+        <div class="card">
+            <a href="calcium.html">
+                <img src="calcium.jpg" alt="Pills" id="product">
+            </a>
+
+            <h1>Calcium</h1>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+
+        <div class="card2">
+            <a href="vitaminc.html">
+                <img src="vitmainc.jpg" alt="Pills" style="width:100%">
+            </a>
+
+            <h1>Vitamin C</h1>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+
+        <div class="card3">
+            <img src="pills.jpg" alt="Pills" style="width:100%">
+            <h1>Pills</h1>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+
+        <div class="card4">
+            <img src="pills.jpg" alt="Pills" style="width:100%">
+            <h1>Pills</h1>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+
+        <div class="card5">
+            <a href="tylenol.html">
+                <img src="tylenol.jpg" alt="Pills" style="width:100%">
+            </a>
+
+            <h1>Tylenol</h1>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+
+        <div class="card6">
+            <img src="pills.jpg" alt="Pills" style="width:100%">
+            <h1>Pills</h1>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+
+        <div class="card7">
+            <img src="pills.jpg" alt="Pills" style="width:100%">
+            <h1>Pills</h1>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+
+        <div class="card8">
+            <img src="pills.jpg" alt="Pills" style="width:100%">
+            <h1>Pills</h1>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+
+        <div class="card9">
+            <img src="pills.jpg" alt="Pills" style="width:100%">
+            <h1>Pills</h1>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+
+        <div class="card10">
+            <img src="pills.jpg" alt="Pills" style="width:100%">
+            <h1>Pills</h1>
+            <p class="price">$19.99</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+    </header>
+
+
+</body>
+
+</html>
