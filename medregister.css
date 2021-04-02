@@ -14,12 +14,12 @@ h1 {
 
 /* Align customer search box */
 .search {
-    text-align: center;
+    /*text-align: center;*/
 }
 
 /* Align registration labels and inputs */
 .reg {
-    text-align: center;
+  /*  text-align: center; */
 }
 
 label {

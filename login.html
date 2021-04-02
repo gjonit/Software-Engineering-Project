@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="medshop.css">
+    <link rel="stylesheet" href="medshoplogin.css">
 </head>
 
 <body>
@@ -21,7 +21,66 @@
 
     <h1>Customer Login</h1>
 
-    <form action="customer.html">
+    <!-- Slide Show -->
+    <section>
+        <div class="slideshow">
+            <div class="Slide fade">
+                <img src="image1.jpg" height="300" width="1000">
+            </div>
+
+            <div class="Slide fade">
+                <img src="image2.jpg" height="300" width="1000">
+            </div>
+            <div class="Slide fade">
+                <img src="image3.jpg" height="300" width="1000">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("Slide");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+    </section>
+
+    <div></div>
+
+    <!-- Login Form -->
+    <form action="products.html" class="login">
         <div>
             <label for="username">Username: </label>
             <input id="username" type="text" placeholder="Username" name="username" required>
