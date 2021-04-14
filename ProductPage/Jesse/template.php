@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 }
 //echo "Connected successfully";
 
-$num = 3;
+$num = $_GET['ProductID'];
 $sql = 'SELECT *
 		FROM products
 		WHERE ProductID = '.$num;
@@ -43,7 +43,7 @@ $man = $row['Manufacturer'];
 	<h1><?php echo $name ?></h1>
 
 	<div class = "product image">
-	  <img src="vitaminc.jpg" alt="">
+	  <img src="images/<?php echo $num;?>.jpg"" alt="">
 	</div>
 
 
