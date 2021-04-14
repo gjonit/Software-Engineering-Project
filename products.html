@@ -13,8 +13,8 @@
 
     <nav>
         <li class="header"><a href="register.html">Register</a></li>
-        <li class="header"><a href="About">About</a></li>
-        <li class="header"><a href="Contact">Contact</a></li>
+        <li class="header"><a href="about.html">About</a></li>
+        <li class="header"><a href="contact.html">Contact</a></li>
 
         <select name="menu" id="menu" class="menu">
             <option value="">Menu</option>
@@ -82,10 +82,30 @@
     </section>
 
     <form action="/search" class="search">
-        <button>Sort By: </button>
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Brand">
-        <input type="text" placeholder="Type">
+
+
+        <select name="medname" id="medname" class="medname">
+            <option value="">Name</option>
+            <option value="Cart">Calcium</option>
+            <option value="Log out">Vitamin C</option>
+            <option value="Settings">Tylenol</option>
+        </select>
+
+        <select name="medbrand" id="medbrand" class="medbrand">
+            <option value="">Brand</option>
+            <option value="Cart">Nature's Bounty</option>
+            <option value="Log out">Emergen-C</option>
+            <option value="Settings">Equate</option>
+        </select>
+
+        <select name="medtype" id="medtype" class="medtype">
+            <option value="">Type</option>
+            <option value="Cart">Vitamins</option>
+            <option value="Log out">Pain Reliever</option>
+            <option value="Settings">Antibiotics</option>
+        </select>
+
+        <button>Search </button>
 
     </form>
 
