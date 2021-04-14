@@ -1,0 +1,72 @@
+
+h1 {
+    position: absolute;
+    letter-spacing: 15px;
+    font-size: 45px;
+    font-weight: 700;
+    right: 19%;
+    top: 10%;
+    color: #333333;
+    margin-top: 100px;
+}
+
+.header {
+    display: inline-block;
+    margin-left: 300px;
+}
+.product_details{
+    box: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: 60%;
+    margin-top: -23%;
+}
+
+.price{
+    position: absolute;
+    right: 28%;
+    top: 62%;
+    font-size: 25px;
+}
+
+.Rating {
+    position: absolute;
+    right: 34%;
+    top: 28%;
+    font-size: 20px;
+}
+
+.product_details button{
+    font-size: 22px;
+    margin-top: 30%;
+    margin-left: 10%;
+
+}
+
+img{
+    display: block;
+    margin-top: 11%;
+    margin-left: 5%;
+    margin-right: auto;
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+
+}
+
+.identifier {
+    font-weight: bold;
+}
+
+button {
+    margin: 20px;
+    margin-left: 50px;
+    padding: 5px 10px;
+}
+
+body {
+    background-image: url(medicalBack2.jpg);
+    background-size: cover;
+    height: 100vh;
+}

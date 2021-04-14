@@ -1,0 +1,73 @@
+h1 {
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 500;
+    color: #433633;
+    margin-top: 100px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.header {
+    display: inline-block;
+    margin-left: 300px;
+    text-align: center;
+}
+
+ /* Align customer search box 
+ .search { 
+     text-align: center; 
+ } */
+
+/* Align registration labels and inputs */
+.reg {
+    text-align: center;
+	
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin: 7px;
+}
+
+table {
+    margin: 0 auto;
+    border: 2px solid #433633 ;
+    border-radius: 5%;
+    padding: 10px;
+}
+
+td {
+    width: 200px;
+    /*
+    border: black solid;
+    border-width: 1px;
+    border-radius: 5%;
+    */
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 240px;
+    height: 180px;
+    padding: 20px;
+
+}
+
+.identifier {
+    font-weight: bold;
+}
+
+button {
+    margin: 20px;
+    margin-left: 0px;
+    padding: 5px 10px;
+}
+
+body {
+    background-image: url(medicalBack2.jpg);
+    background-size: cover;
+    height: 100vh;
