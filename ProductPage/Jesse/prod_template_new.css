@@ -1,0 +1,65 @@
+
+h1 {
+    text-align: center;
+    letter-spacing: 7px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    border: 15px;
+}
+
+#product {
+    width: 600px;
+    height: 400px;
+    margin-left: -40%;
+    display: inline-block;
+    margin-top: 10%;
+
+   }
+
+input {
+  width: 80px;
+  height: 25px;
+  margin-left: 38%;
+}
+
+
+
+table{
+    margin-top: 5%;
+    margin-left: 20%;
+    border-spacing: 20px;
+    width: 300px;
+    font-size: 20px;
+    color: white;
+}
+
+.price{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+
+#add {
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    font-size: 22px;
+    margin-left: 30%;
+ 
+}
+
+
+.identifier {
+    font-weight: bold;
+}
+
+
+
+body {
+    background-image: url(medicalBack2.jpg);
+    background-size: cover;
+    height: 100vh;
+}
