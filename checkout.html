@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <li class="header"><a href="register.html">Register</a></li>
+        <li class="header"><a href="about.html">About</a></li>
+        <li class="header"><a href="contact.html">Contact</a></li>
+
+    </nav>
+
+    <div class="wrapper">
+        <div class="payment">
+            <h2>Payment Method</h2>
+
+            <form action="confirm_order.html">
+
+                <div class="form">
+                    <div class="card space">
+                        <label for="card" class="label">Card Holder:</label>
+                        <input type="text" class="input" name="card_holder" placeholder="Full Name">
+                    </div>
+
+                    <div class="card space" class="label">
+                        <label for="card" class="label">Card number:</label>
+                        <input type="text" class="input" name="card_number" placeholder="Card Number">
+                    </div>
+
+                    <div class="card-grp space">
+
+                        <div class="card-item">
+                            <label for="expiration" class="label">Expiration date:</label>
+                            <input type="month" class="input" name="expiration" placeholder="00 / 00">
+                        </div>
+
+                        <div class="card-item-two">
+                            <label for="expiration" class="label">CVC:</label>
+                            <input type="text" class="input" name="cvc" placeholder="000">
+                        </div>
+
+                    </div>
+
+                    <div class="btn">
+                        <button>Pay</button>
+                    </div>
+
+                </div>
+
+            </form>
+
+            <form action="https://www.paypal.com/us/signin">
+                <button>PayPal</button>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
