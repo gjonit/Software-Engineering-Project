@@ -1,0 +1,122 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    background: #2196f3;;
+}
+
+.cart{
+    background: #f8f8f8;
+    max-width: 660px;
+    margin: 80px auto;
+    height: auto;
+    padding: 35px;
+    padding-top: 70px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.cart h2{
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    color: #0d3c64;
+}
+
+.form .label{
+    display: block;
+    color: #555555;
+    margin-bottom: 6px;
+    /*margin-top: 20px; */
+    
+
+}
+
+.form .input{
+    padding: 13px 0 13px 25px;
+    width: 90%;
+    text-align: center;
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    word-wrap: 3px;
+    outline: none;
+    font-size: 16px;
+    color: #555555;
+}
+
+.form-two .input{
+    padding: 13px 0 13px 25px;
+    width: 90%;
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    word-wrap: 3px;
+    outline: none;
+    font-size: 16px;
+    color: #555555;
+}
+
+.card-grp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-item{
+    width: 44%;
+
+}
+
+.card-item-two{
+    width: 44%;
+    padding-right: 5%;
+
+}
+
+.space{
+    margin-bottom: 20px;
+}
+
+button {
+    width: 50%;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 25%;
+    border: 1px solid rgb(151, 185, 212);
+    background: #2691d9;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+  }
+
+
+  .header {
+    display: inline-block;
+    margin-left: 20%;
+    text-align: center;
+}
+
+.nav{
+    background-color:rgb(255, 229, 80);
+    /* background-color: coral; */
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+#product {
+    width: 150px;
+    height: 90px;
+    margin-right: 40px;
+  }
+
+h3{
+    margin-top: 0%;
+  }
+
+#info {
+    text-align: center;
+  }
