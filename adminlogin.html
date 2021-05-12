@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="mainlogin.css">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <li class="header"><a href="register.html">Register</a></li>
+        <li class="header"><a href="about.html">About</a></li>
+        <li class="header"><a href="contact.html">Contact</a></li>
+
+    </nav>
+
+    <!-- Slide Show -->
+    <section>
+        <div class="slideshow">
+            <div class="Slide fade">
+                <img src="image1.jpg" height="300" width="1000">
+            </div>
+
+            <div class="Slide fade">
+                <img src="image2.jpg" height="300" width="1000">
+            </div>
+            <div class="Slide fade">
+                <img src="image3.jpg" height="300" width="1000">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("Slide");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+    </section>
+
+    <div></div>
+
+
+    <div class="wrapper">
+        <div class="payment">
+            <h2>Admin Login</h2>
+
+            <form action="confirm_order.html">
+
+                <div class="form">
+                    <div class="card space">
+                        <label for="card" class="label">Username:</label>
+                        <input type="text" class="input" name="card_holder" placeholder="Username">
+                    </div>
+
+                    <div class="card space" class="label">
+                        <label for="card" class="label">Password:</label>
+                        <input type="password" class="input" name="card_number" placeholder="Card Number">
+                    </div>
+
+                    <div class="btn">
+                        <button>Login</button>
+                    </div>
+
+                </div>
+
+            </form>
+
+            <form action="mainlogin.html">
+                <button>User</button>
+            </form>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
