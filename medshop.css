@@ -1,0 +1,154 @@
+body {
+  background-image: url(medicalBack2.jpg);
+  height: 300vh;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  letter-spacing: 5px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  letter-spacing: 5px;
+  color: white;
+  margin-left: 10%;
+}
+
+.header {
+  display: inline-block;
+  margin-left: 20%;
+  text-align: center;
+}
+
+/*  Style anchors in header class, hover effect */
+.header a:hover {
+  background-color: rgb(163, 163, 165);
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  margin: 3px;
+}
+
+/*
+button{
+    margin: 20px;
+}
+*/
+
+.menu {
+  display: inline-block;
+  margin-left: 10%;
+}
+
+.slideshow {
+  top: 2.5%;
+  max-width: 1000px;
+  max-height: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.Slides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+  cursor: pointer;
+  position: relative;
+  left: 48%;
+  top: 2%;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+table {
+  margin-left: 15%;
+  border-spacing: 20px;
+}
+
+#product {
+  width: 300px;
+  height: 180px;
+}
+
+.price {
+  color: black;
+  font-size: 22px;
+  text-align: center;
+  background-color: white;
+}
+
+h3 {
+  text-align: center;
+  background-color: white;
+  border-top: 2px solid black;
+  padding-top: 5px;
+}
+
+#cartadd {
+  color: white;
+  background-color: black;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+td {
+  background-color: white;
+}
+
+.search {
+  margin-top: 20px;
+  text-align: center;
+}
