@@ -1,5 +1,12 @@
 <?php
 include "config.php";
+session_start();
+echo session_id();
+
+$nam = $_SESSION['uname'];
+
+$testnam = "'{$nam}'";
+
 
 $num = $_GET['ProductID'];
 $sql = 'SELECT *
@@ -11,11 +18,25 @@ $result = $conn->query($sql);
 $row = $result->fetch_assoc();
 
 $name = $row['Name'];
+$testname = "'{$name}'";
 $price = $row['Price'];
 $desc = $row['Description'];
 $man = $row['Manufacturer'];
 
+if (isset($_POST['nw_update'])) {
+    $quant = $_POST['quantity'];
+    $allprice = $quant * $price;
+    $sqll = "INSERT INTO cart (CartID, ProductID, Quantity, Price, PorductName, Total) VALUES ($testnam, $num, $quant, $price, $testname, $allprice)";
+
+    if ($conn->query($sqll) === TRUE) {
+        $smth = "123";
+    } else {
+        echo "Error: " . $sqll . "<br>" . $conn->error;
+    }
+}
 ?>
+
+
 <html lang="en">
 
 <head>
@@ -28,20 +49,24 @@ $man = $row['Manufacturer'];
 </head>
 
 <body>
+    <a href="Products.php">Go Back</a>
     <table>
         <tr>
             <td>
 
                 <img src="pics/<?php echo $name; ?>.jpg"" alt="" id = " product">
             </td>
+            <form method="post">
+                <td>
+                    <h1><?php echo $name ?></h1>
+                    <p><?php echo $desc ?></p>
+                    <p class="price"><?php echo "$" . $price ?></p>
+                    <input type="number" id="quantity" name="quantity" placeholder="Quantity">
+                    <input type="submit" name="nw_update" value="Add to Cart" />
+                </td>
 
-            <td>
-                <h1><?php echo $name ?></h1>
-                <p><?php echo $desc ?></p>
-                <p class="price"><?php echo "$" . $price ?></p>
-                <input placeholder="quantity">
-                <p><button id="add">Add to Cart</button></p>
-            </td>
+            </form>
+
         </tr>
     </table>
 

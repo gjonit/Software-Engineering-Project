@@ -1,4 +1,5 @@
 <?php
+
 include "config.php";
 //echo "Connected successfully";
 
@@ -8,12 +9,17 @@ if (isset($_POST['but_logout'])) {
     header('Location: login.php');
 }
 
+session_start();
+echo session_id();
+
 $sql = 'SELECT *
         FROM products
         ORDER BY ProductID';
 $result = mysqli_query($conn, $sql);
 // output data of each row
 $count = 0;
+
+// $testname = $_SESSION['uname'];
 
 ?>
 
@@ -34,21 +40,14 @@ $count = 0;
         <form method='post' action="">
             <input type="submit" value="Logout" name="but_logout">
         </form>
-
         <li class="header"><a href="register.html" style="color:white; font-size:22px">Register</a></li>
-
         <li class="header"><a href="about.html" style="color:white;font-size:22px">About</a></li>
         <li class="header"><a href="contact.html" style="color:white;font-size:22px">Contact</a></li>
-
-        <!-- <select name="menu" id="menu" class="menu">
-            <option value="">Menu</option>
-            <option value="Cart">Cart</option>
-            <option value="Log out">Log out</option>
-            <option value="Settings">Settings</option>
-        </select> -->
+        <li class="header"><a href="cart.php" style="color:white;font-size:22px">Cart</a></li>
     </nav>
 
     <h1>Medical co Products</h1>
+
 
     <section>
         <div class="slideshow">
@@ -109,13 +108,7 @@ $count = 0;
         </script>
     </section>
 
-    <form action="/search" class="search">
-        <button>Sort By: </button>
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Brand">
-        <input type="text" placeholder="Type">
 
-    </form>
 
     <h2>All Products</h2>
 
@@ -123,15 +116,16 @@ $count = 0;
 
         <tr>
             <?php while ($products = mysqli_fetch_assoc($result)) : ?>
-
-                <td>
-                    <a href="template.php?ProductID=<?php echo $products['ProductID']; ?>">
-                        <img src="pics/<?php echo $products['Name']; ?>.jpg" alt="" id="product">
-                    </a>
-                    <h3><?php echo $products['Name']; ?> </h3>
-                    <div class="price"><?php echo "$" . $products['Price']; ?></div>
-                    <button id="cartadd">Add to Cart</button>
-                </td>
+                <form method="post">
+                    <td>
+                        <a href="template.php?ProductID=<?php echo $products['ProductID']; ?>">
+                            <img src="pics/<?php echo $products['Name']; ?>.jpg" alt="" id="product">
+                        </a>
+                        <h3><?php echo $products['Name']; ?> </h3>
+                        <div class="price"><?php echo "$" . $products['Price']; ?></div>
+                        <button id="cartadd" name="cartaddd" value="cartadd">Add to Cart</button>
+                    </td>
+                </form>
                 <?php $count++ ?>
                 <?php
                 if ($count % 4 == 0) {

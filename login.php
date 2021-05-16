@@ -6,6 +6,8 @@
 
 include "config.php";
 
+session_start();
+session_regenerate_id(TRUE);
 
 if (isset($_POST['but_submit'])) {
 
@@ -14,7 +16,7 @@ if (isset($_POST['but_submit'])) {
 
     if ($uname != "" && $password != "") {
 
-        $sql_query = "select count(*) as cntUser from users where ID='" . $uname . "' and Password='" . $password . "'";
+        $sql_query = "select count(*) as cntUser from users where ID='" . $uname . "' and Pass='" . $password . "'";
         $result = mysqli_query($conn, $sql_query);
         $row = mysqli_fetch_array($result);
 
@@ -71,7 +73,7 @@ if (isset($_POST['but_submitt'])) {
 <body>
 
     <nav>
-        <li class="header"><a href="register.html">Register</a></li>
+        <li class="header"><a href="register.php">Register</a></li>
         <li class="header"><a href="about.html">About</a></li>
         <li class="header"><a href="contact.html">Contact</a></li>
     </nav>
