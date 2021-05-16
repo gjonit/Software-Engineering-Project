@@ -9,3 +9,6 @@ for file in os.listdir(f):
     img = Image.open(f_img)
     img = img.resize((500, 500))
     img.save(f_img)
+
+
+print("Hello!!")
