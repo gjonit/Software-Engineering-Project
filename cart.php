@@ -91,7 +91,7 @@ if ($result !== FALSE) {
             }
         }
         $dd = "'{$descriptionn}'";
-        $sqlll = "INSERT INTO ORDERS (ORDERID, DESCR, sttatus, price) VALUES ($idorder, $dd, 'GOOD', $qty)";
+        $sqlll = "INSERT INTO ORDERS (ORDERID, DESCR, sttatus, price, Name) VALUES ($idorder, $dd, 'GOOD', $qty,$nome )";
 
         if ($conn->query($sqlll) === TRUE) {
             echo "</br>";

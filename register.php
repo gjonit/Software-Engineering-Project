@@ -1,6 +1,7 @@
 <?php
 
 include "config.php";
+error_reporting(E_ERROR | E_PARSE);
 
 $username = $_POST['username'];
 $username = "'{$username}'";
@@ -21,7 +22,7 @@ $password = "'{$password}'";
 
 
 if (isset($_POST['sub'])) {
-  $sql = "INSERT INTO users (ID, Birthdate, PhoneNr, Email, Addr, Pass) VALUES ($username, $birthdate,$phone,$email, $addr,$password)";
+  $sql = "INSERT INTO users (ID, Birthdate, PhoneNr, Email, Addr, Pass) VALUES ($username, $birthdate,$phone,$email, $addr,HASHBYTES('SMA1',$password))";
   if ($conn->query($sql) === TRUE) {
     echo "GOOD";
   } else {

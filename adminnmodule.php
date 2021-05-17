@@ -25,7 +25,7 @@ if (isset($_POST['but_logout'])) {
             padding: 10px 24px;
             cursor: pointer;
             float: right;
-            border-radius: 10px;
+            border-radius: 50px;
         }
     </style>
     <meta charset="UTF-8">
@@ -47,30 +47,19 @@ if (isset($_POST['but_logout'])) {
 
 
     <div class="sidenav">
-        <a href="AddProduct.html">
-            <button style="background-color:blue;color:white;height: 30px; width: 150px;margin: 20px ;border-radius: 5px;">Product Entry</button>
-            <a href="ViewOrder.html">
-                <button style="background-color:blue;color:white;height: 30px; width: 150px;margin: 20px ;border-radius: 5px;">View Order</button>
-                <a href="Viewuserdetails.html">
-                    <button style="background-color:blue;color:white;height: 30px; width:150px;margin: 20px ;border-radius: 5px;">View User Details</button>
 
-                    <a href="register.html">
-                        <button style="background-color:blue;color:white;height: 30px; width:150px;margin: 20px ;border-radius: 5px;">Register New User</button>
+        <a href="viewProducts.php">
+            <button style="background-color:blue;color:white;height: 100px; width: 350px;margin-left: 440px; margin-top: 300px; font-size: 25px; border-radius: 5px;">Product Entry</button>
+            <a href="viewOrders.php">
+                <button style="background-color:blue;color:white;height: 100px; width: 350px; margin-left: 200px; font-size: 25px;border-radius: 5px;">View Order</button>
+                <a href="viewUsers.php">
+                    <button style="background-color:blue;color:white;height: 100px; width: 350px ;margin-left: 440px;font-size: 25px;border-radius: 5px;">View User Details</button>
+
+                    <a href="register.php">
+                        <button style="background-color:blue;color:white;height: 100px; width: 350px;margin-left: 195px;font-size: 25px; margin-top: 200px; border-radius: 5px;">Register New User</button>
     </div>
 
-    <div id="banner">
-        <div class="inline-block">
-            <img src="pics/chart1.jpg" style="width:550px;height:300px;">
-        </div>
 
-        <div class="inline-block">
-            <img src="pics/chart2.png" style="width:550px;height: 300px;">
-        </div>
-
-        <div class="inline-block">
-            <img src="pics/chart3.jpg" style="width:550px;height:300px;">
-        </div>
-    </div>
 
 </body>
 

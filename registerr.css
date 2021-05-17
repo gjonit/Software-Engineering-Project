@@ -68,8 +68,3 @@
   background: linear-gradient(to bottom, #34caca 5%, #30c9c9 100%);
   background-color: #34caca;
 }
-body {
-  background-image: url(medicalBack2.jpg);
-  background-size: cover;
-  height: 100vh;
-}
